@@ -1,0 +1,224 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左目　開閉"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "左目　笑顔"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右目　開閉"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "右目　笑顔"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "目玉 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "目玉 Y"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "口　変形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "口　開閉"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "照れ"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "体の回転 X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "体の回転 Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "体の回転 Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "髪揺れ　前"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "髪揺れ　横"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "髪揺れ"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "スカート"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "乳揺れ"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "乳揺れ２"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "レイヤーセット14"
+		},
+		{
+			"Id": "PartHairFront",
+			"Name": "前髪"
+		},
+		{
+			"Id": "PartHairSide",
+			"Name": "横髪"
+		},
+		{
+			"Id": "PartFace",
+			"Name": "顔"
+		},
+		{
+			"Id": "PartBackHead",
+			"Name": "後頭部"
+		},
+		{
+			"Id": "PartHairBack",
+			"Name": "後ろ髪"
+		},
+		{
+			"Id": "PartTwinTails",
+			"Name": "ツインテール"
+		},
+		{
+			"Id": "PartCore",
+			"Name": "コア"
+		},
+		{
+			"Id": "PartUpperBody",
+			"Name": "上半身"
+		},
+		{
+			"Id": "PartNeck",
+			"Name": "首"
+		},
+		{
+			"Id": "PartArmL",
+			"Name": "左腕"
+		},
+		{
+			"Id": "PartArmR",
+			"Name": "右腕"
+		},
+		{
+			"Id": "PartLowerBody",
+			"Name": "下半身"
+		},
+		{
+			"Id": "Part2",
+			"Name": "レイヤーセット2"
+		},
+		{
+			"Id": "Part3",
+			"Name": "レイヤーセット1"
+		},
+		{
+			"Id": "Part4",
+			"Name": "レイヤーセット5"
+		},
+		{
+			"Id": "Part5",
+			"Name": "レイヤーセット6"
+		},
+		{
+			"Id": "Part6",
+			"Name": "レイヤーセット11"
+		},
+		{
+			"Id": "Part7",
+			"Name": "レイヤーセット7"
+		},
+		{
+			"Id": "Part8",
+			"Name": "レイヤーセット3"
+		},
+		{
+			"Id": "Part11",
+			"Name": "レイヤーセット10"
+		},
+		{
+			"Id": "Part13",
+			"Name": "レイヤーセット13"
+		},
+		{
+			"Id": "Part9",
+			"Name": "レイヤーセット8"
+		},
+		{
+			"Id": "Part12",
+			"Name": "レイヤーセット12"
+		},
+		{
+			"Id": "Part10",
+			"Name": "レイヤーセット9"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamMouthForm",
+			"ParamMouthOpenY"
+		]
+	]
+}
