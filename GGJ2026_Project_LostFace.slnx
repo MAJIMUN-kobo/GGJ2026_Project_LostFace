@@ -1,0 +1,12 @@
+﻿<Solution>
+  <Project Path="Live2D.Cubism.csproj" />
+  <Project Path="UniTask.csproj" />
+  <Project Path="UniTask.Linq.csproj" />
+  <Project Path="Live2D.Cubism.Editor.csproj" />
+  <Project Path="UniTask.Addressables.csproj" />
+  <Project Path="Assembly-CSharp-firstpass.csproj" />
+  <Project Path="UniTask.TextMeshPro.csproj" />
+  <Project Path="UniTask.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="UniTask.DOTween.csproj" />
+</Solution>
