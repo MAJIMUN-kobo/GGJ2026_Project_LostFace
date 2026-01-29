@@ -17,6 +17,7 @@ public class LiveCharacter : MonoBehaviour
 
     void LateUpdate()
     {
-        _model.Parameters[0].Value = Mathf.Sin(Time.time) * 15;
+        _model.Parameters[0].Value += Input.GetAxis("Mouse X");
+        _model.Parameters[0].Value = Mathf.Clamp(_model.Parameters[0].Value, -10, 10);
     }
 }
