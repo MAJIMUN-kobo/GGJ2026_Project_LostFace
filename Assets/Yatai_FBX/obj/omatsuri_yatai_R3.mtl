@@ -1,0 +1,100 @@
+# Blender MTL File: 'None'
+# Material Count: 9
+
+newmtl KIngyosuku2i_col
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\KingyoSukui2_col.jpg
+
+newmtl gas_col.004
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\gas_col.jpg
+
+newmtl kingyoYtaibone_col.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl kingyo_col.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\Kingyo_col.jpg
+
+newmtl menu_col.005
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\Menu_col.jpg
+
+newmtl pipechair_col.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\pipeIsu_col.jpg
+
+newmtl yakitori2_col
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\Yakitori2_col.jpg
+
+newmtl yataibone1_col.005
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\YataiBone_col.jpg
+
+newmtl yataibone4_col.002
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd G:\\CG\\2D\\clipstdioasset\\CS_model\\Matsuri_Yatai\\scenes\\Yatai_FBX\\tex\\YataiBone_col.jpg
