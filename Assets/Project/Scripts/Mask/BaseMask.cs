@@ -25,6 +25,7 @@ public abstract class BaseMask : MonoBehaviour
         if(collision.transform.tag.Contains("FallCheck") && !isFalled)
         {
             OnFall();
+            Debug.Log("Falled");
         }
     }
 

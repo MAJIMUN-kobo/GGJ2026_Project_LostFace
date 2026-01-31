@@ -1,3 +1,4 @@
+using Live2D.Cubism.Core.Unmanaged;
 using UnityEngine;
 
 public class ShatekiManager : MonoBehaviour
@@ -38,6 +39,14 @@ public class ShatekiManager : MonoBehaviour
 
     private Transform[] GetPointAll()
     {
-        return _generatePoint.GetComponentsInChildren<Transform>();
+        Debug.Log(_generatePoint);
+        var children = _generatePoint.GetComponentsInChildren<Transform>();
+        var points = new Transform[children.Length - 1];
+        for(int i = 1; i < children.Length; i++)
+        {
+            points[i - 1] = children[i];
+        }
+
+        return points;
     }
 }
