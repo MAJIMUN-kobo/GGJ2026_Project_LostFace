@@ -11,6 +11,8 @@ public class Gun : MonoBehaviour
     [SerializeField] private float _inputValueShot;
     [SerializeField] private float _inputHoldValueShot;
 
+    private Vector3 _angles;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -67,7 +69,10 @@ public class Gun : MonoBehaviour
         var mouseX = Input.GetAxis("Mouse X");
         var mouseY = Input.GetAxis("Mouse Y");
 
-        transform.eulerAngles += new Vector3(-_inputValueLook.y * _lookIntencity, _inputValueLook.x * _lookIntencity, 0);
+        _angles += new Vector3(-_inputValueLook.y * _lookIntencity, _inputValueLook.x * _lookIntencity, 0);
+        _angles.x = Mathf.Clamp(_angles.x, -45, 45);
+        _angles.y = Mathf.Clamp(_angles.y, -30, 30);
+        transform.eulerAngles = _angles;
     }
 
     public void Shot()
