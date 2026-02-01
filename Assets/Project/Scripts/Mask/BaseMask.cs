@@ -20,6 +20,7 @@ public abstract class BaseMask : MonoBehaviour
 
     [Header("** Debug Info **")]
     [SerializeField] protected bool _fallCheck;
+    [SerializeField] public bool _deathFlag;
 
     [Header("** Audio Settings **")]
     [SerializeField] protected AudioSource _audioSource;

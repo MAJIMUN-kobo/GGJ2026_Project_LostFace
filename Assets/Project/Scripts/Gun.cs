@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Gun : MonoBehaviour
 {
@@ -12,12 +14,16 @@ public class Gun : MonoBehaviour
     [SerializeField] private float _inputHoldValueShot;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _shotSE;
+    [SerializeField] private float _bulletCount;
+    [SerializeField] private float _bulletMax = 30;
 
     private Vector3 _angles;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _bulletCount = _bulletMax;
+
         _playerInput.actions["Look"].Enable();
         _playerInput.actions["Look"].performed += OnLookActionPerformed;
         _playerInput.actions["Look"].canceled += OnLookActionCanceled;
@@ -84,6 +90,13 @@ public class Gun : MonoBehaviour
 
         Rigidbody rb = clone.GetComponent<Rigidbody>();
         rb?.AddForce(_shotPoint.forward * 10, ForceMode.Impulse);
+
+        _bulletCount--;
+        if(_bulletCount <= 0)
+        {
+            _bulletCount = 0;
+            //SceneManager.LoadScene("GameOverScene");
+        }
 
         PlaySE(_shotSE);
     }

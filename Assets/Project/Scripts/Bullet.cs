@@ -24,9 +24,9 @@ public class Bullet : MonoBehaviour
 
     private void HitComplementRay(LayerMask layer)
     {
-        var startRayPoint = transform.position;
-        var direction = (_previousPosition - startRayPoint).normalized;
-        var distance = Vector3.Distance(_previousPosition, startRayPoint);
+        var startRayPoint = _previousPosition;
+        var direction = transform.position;
+        var distance = Vector3.Distance(_previousPosition, transform.position);
 
         Debug.DrawRay(startRayPoint, direction * distance, Color.red);
 
@@ -35,6 +35,7 @@ public class Bullet : MonoBehaviour
         if(Physics.Raycast(ray, out hit, distance, layer))
         {
             transform.position = hit.point;
+            Debug.Log($"MaskHit = {hit.transform.name}");
         }
     }
 }

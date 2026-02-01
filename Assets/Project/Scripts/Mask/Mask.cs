@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Mask : BaseMask
 {
@@ -16,6 +17,8 @@ public class Mask : BaseMask
 
         PlaySE(_fallSE);
         Destroy(gameObject, 1.0f);
+
+        if(_deathFlag) SceneManager.LoadScene("GameOverScene");
 
         base.OnFall();
     }

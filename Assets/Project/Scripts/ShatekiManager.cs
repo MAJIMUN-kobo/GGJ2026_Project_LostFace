@@ -41,6 +41,7 @@ public class ShatekiManager : MonoBehaviour
     {
         var clone = Instantiate(origin, point);
         clone.transform.localPosition = Vector3.zero;
+        clone._deathFlag = Random.Range(0, 100) < 5 ? true : false;
 
         return clone;
     }
