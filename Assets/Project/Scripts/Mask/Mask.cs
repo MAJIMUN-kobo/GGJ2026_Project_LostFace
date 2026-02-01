@@ -7,9 +7,10 @@ public class Mask : BaseMask
         LiveCharacter character = GameObject.FindAnyObjectByType<LiveCharacter>();
         character?.NotifyEmotion(emotionParameter.joy, emotionParameter.anger, emotionParameter.sorrow, emotionParameter.pleasure);
 
-        Destroy(gameObject, 1.0f);
-
         isFalled = true;
+
+        PlaySE(_fallSE);
+        Destroy(gameObject, 1.0f);
 
         base.OnFall();
     }

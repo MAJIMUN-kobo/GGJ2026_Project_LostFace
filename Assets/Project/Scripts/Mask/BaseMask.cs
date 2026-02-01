@@ -18,6 +18,10 @@ public abstract class BaseMask : MonoBehaviour
     [Header("** Debug Info **")]
     [SerializeField] protected bool _fallCheck;
 
+    [Header("** Audio Settings **")]
+    [SerializeField] protected AudioSource _audioSource;
+    [SerializeField] protected AudioClip _fallSE;
+
     public bool isFalled { get; protected set; } = false;
 
     protected virtual void OnTriggerEnter(Collider collision)
@@ -45,5 +49,10 @@ public abstract class BaseMask : MonoBehaviour
         transform.rotation = Quaternion.identity;
         transform.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
         transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-    }    
+    }
+
+    protected void PlaySE(AudioClip clip)
+    {
+        _audioSource?.PlayOneShot(clip);
+    }
 }

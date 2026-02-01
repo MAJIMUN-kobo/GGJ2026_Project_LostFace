@@ -10,6 +10,8 @@ public class Gun : MonoBehaviour
     [SerializeField] private float _lookIntencity = 0.01f;
     [SerializeField] private float _inputValueShot;
     [SerializeField] private float _inputHoldValueShot;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _shotSE;
 
     private Vector3 _angles;
 
@@ -82,6 +84,8 @@ public class Gun : MonoBehaviour
 
         Rigidbody rb = clone.GetComponent<Rigidbody>();
         rb?.AddForce(_shotPoint.forward * 10, ForceMode.Impulse);
+
+        PlaySE(_shotSE);
     }
 
     public void SetCursorActive(bool active)
@@ -90,5 +94,10 @@ public class Gun : MonoBehaviour
         else Cursor.lockState = CursorLockMode.Locked;
 
         Cursor.visible = active;
+    }
+
+    public void PlaySE(AudioClip clip)
+    {
+        _audioSource?.PlayOneShot(clip);
     }
 }
