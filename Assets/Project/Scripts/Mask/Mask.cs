@@ -7,6 +7,11 @@ public class Mask : BaseMask
         LiveCharacter character = GameObject.FindAnyObjectByType<LiveCharacter>();
         character?.NotifyEmotion(emotionParameter.joy, emotionParameter.anger, emotionParameter.sorrow, emotionParameter.pleasure);
 
+        ScoreElementUGUI scoreElementUI = GameObject.FindAnyObjectByType<ScoreElementUGUI>();
+        scoreElementUI?.CreateMaskScore(transform.position, transform.eulerAngles, addScoreValue);
+        
+        GameManager.Instance.AddScore(addScoreValue);
+
         isFalled = true;
 
         PlaySE(_fallSE);
