@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3546392627746960318}
   - component: {fileID: 5755171707306027910}
   - component: {fileID: 869706974525481897}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mask_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,6 +52,7 @@ MonoBehaviour:
     anger: 0
     sorrow: 0
     pleasure: 0
+  addScoreValue: 100
   _fallCheck: 0
   _audioSource: {fileID: 869706974525481897}
   _fallSE: {fileID: 8300000, guid: f6f9f5268d009264a842e047d80567ad, type: 3}
@@ -242,6 +243,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e2e6789b93e34f345bf6c4f6b204d8fb, type: 3}
       propertyPath: m_Name
       value: Smile_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e2e6789b93e34f345bf6c4f6b204d8fb, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

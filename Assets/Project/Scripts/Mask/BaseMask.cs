@@ -15,6 +15,9 @@ public abstract class BaseMask : MonoBehaviour
     [Header("** Emotion Settings **")]
     public EmotionParameter emotionParameter;
 
+    [Header("** Score Settings **")]
+    public int addScoreValue = 100;
+
     [Header("** Debug Info **")]
     [SerializeField] protected bool _fallCheck;
 
