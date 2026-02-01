@@ -8,7 +8,9 @@ public class Mask : BaseMask
         character?.NotifyEmotion(emotionParameter.joy, emotionParameter.anger, emotionParameter.sorrow, emotionParameter.pleasure);
 
         isFalled = true;
-        //DebugReset();
+
+        PlaySE(_fallSE);
+        Destroy(gameObject, 1.0f);
 
         base.OnFall();
     }

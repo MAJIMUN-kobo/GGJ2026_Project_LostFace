@@ -1,4 +1,5 @@
 using Live2D.Cubism.Core.Unmanaged;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ShatekiManager : MonoBehaviour
@@ -9,13 +10,20 @@ public class ShatekiManager : MonoBehaviour
 
     void Start()
     {
+        _maskPoints = GetPointAll();
         SetStageAll();
+    }
+
+    void Update()
+    {
+        if(AllHitCheck())
+        {
+            SetStageAll();
+        }
     }
 
     public void SetStageAll()
     {
-        _maskPoints = GetPointAll();
-
         for(int i = 0; i < _maskPoints.Length; i++)
         {
             var maskPrefab = DiceMask();
@@ -48,5 +56,12 @@ public class ShatekiManager : MonoBehaviour
         }
 
         return points;
+    }
+
+    private bool AllHitCheck()
+    {
+        var masks = GameObject.FindObjectsByType<BaseMask>(FindObjectsSortMode.None);
+        if(masks.Length == 0) return true;
+        else return false;
     }
 }

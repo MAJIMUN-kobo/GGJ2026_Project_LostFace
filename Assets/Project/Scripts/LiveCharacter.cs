@@ -16,15 +16,12 @@ public class LiveCharacter : MonoBehaviour
     
     [SerializeField] private CubismModel _model;
     [SerializeField] private EmotionElementUGUI _emotionUI;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _emotionUpSE;
 
     void Start()
     {
         _emotionUI = GameObject.FindAnyObjectByType<EmotionElementUGUI>();
-    }
-
-    void Update()
-    {
-        
     }
 
     void LateUpdate()
@@ -45,5 +42,11 @@ public class LiveCharacter : MonoBehaviour
         _emotionUI.SetEmotionValue(2, emotionParameter.sorrow, 10);
         _emotionUI.SetEmotionValue(3, emotionParameter.pleasure, 10);
 
+        PlaySE(_emotionUpSE);
+    }
+
+    private void PlaySE(AudioClip clip)
+    {
+        _audioSource?.PlayOneShot(clip);
     }
 }
